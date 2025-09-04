@@ -111,8 +111,64 @@ header {
 
 .whywater {
     background: var(--m-bg);
+    position: relative;
 }
 
+.whytext {
+    width:100%;
+    height:calc(100% - 400px);
+    margin-top:200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding:20px;
+    gap:20px
+}
+
+.whytext h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size:2.1rem;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.whytext h1 strong {
+    color:var(--accent);
+}
+
+.whytext h2 {
+    font-weight: normal;
+}
+
+.whycollage {
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.collage-hor {
+    display: flex;
+    background:red;
+    height:200px;
+     align-items: stretch;
+}
+
+.collage-hor img {
+    width:auto;
+    height:100%;
+    object-fit: cover;
+}
+
+.collage-ver {
+    display:none;
+}
 
 /* Media Queries for whywater when >  ipad
   width:calc(100vw - 50px);
@@ -120,9 +176,39 @@ header {
 */
 
 .difference {
-    background: green;
+    background: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    gap:50px;
 }
 
+.left-diff {
+    display: flex;
+flex-direction: column;
+align-items: start;
+gap:10px
+}
+
+.left-diff  h1 {
+      text-transform: uppercase;
+    font-weight: normal;
+    font-size:1.5rem;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.right-diff {
+    background:var(--accent2);
+    width:100%;
+    height:100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+}
 
 /* Media Queries for difference when >  ipad
   width:calc(100vw - 50px);
@@ -130,9 +216,27 @@ header {
 */
 
 .call-to-action {
-    background: violet;
+    background:var(--m-bg);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: start;
+    gap:30px;
+}
+
+.call-to-action p {
+    font-size:1.8rem;
+    width:200px;
+}
 
 /* Media Queries for call-to-action when >  ipad
   width:calc(100vw - 50px);
