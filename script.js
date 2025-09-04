@@ -8,6 +8,8 @@ function resizeCollages() {
     if (imgs.length === 0) return;
 
     const containerWidth = row.clientWidth;
+    var laptopGap = 0;
+    if (containerWidth >= 768) laptopGap = 60;
 
     // Get natural sizes
     const sizes = imgs.map(img => ({
@@ -21,7 +23,7 @@ function resizeCollages() {
     const totalWidth = scaledWidths.reduce((a, b) => a + b, 0);
 
     // Determine scale factor if total width > container
-    const scaleFactor = containerWidth / totalWidth;
+    const scaleFactor = (containerWidth - laptopGap) / totalWidth;
 
     imgs.forEach((img, i) => {
       img.style.width = (scaledWidths[i] * scaleFactor) + 'px';
