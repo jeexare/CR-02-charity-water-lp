@@ -23,7 +23,7 @@
 }
 
 .logo {
-    background-image: url('img/cw_logo-2.png');
+    background-image: url(img/cw_logo-2.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ header {
 }
 
 .hero {
-    background: url('img/Ambote-CharityWater-09114.jpg');
+    background: url(img/Ambote-CharityWater-09114.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
