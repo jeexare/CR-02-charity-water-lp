@@ -22,14 +22,8 @@
     height: calc(100vh - 80px);
 }
 
-
-/* Media Queries for full-h when >  ipad
- height: calc(100vh - 20px);
-
-*/
-
 .logo {
-    background-image: url('/img/cw_logo-2.png');
+    background-image: url('img/cw_logo-2.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -59,35 +53,21 @@ header {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    z-index:999;
+    z-index: 999;
 }
-
-/* Media Queries for header when >  ipad
- width: 50px;
-    height: 100vh;
-    right: 0;
-    top: 0;
-
-*/
 
 .hero {
-    background: url(/img/Ambote-CharityWater-09114.jpg);
-    background-size:cover;
-    background-position:center;
+    background: url(img/Ambote-CharityWater-09114.jpg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     margin-top: 50px;
-    color:var(--m-bg);
+    color: var(--m-bg);
 }
-
-/* Media Queries for hero when >  ipad
-  margin-top: 0px;
-  width:calc(100vw - 50px);
-
-*/
 
 .hero-container {
     position: absolute;
-    bottom:50px;
+    bottom: 50px;
     box-sizing: border-box;
     padding-left: 20px;
     width: 95%;
@@ -101,17 +81,17 @@ header {
 }
 
 @media (min-width: 1024px) {
-   .hero-container {
-       width:70%;
+    .hero-container {
+        width: 70%;
     }
     .hero h1 {
-        font-size:4.75rem;
+        font-size: 4.75rem;
     }
 }
 
 .hero h2 {
     font-weight: lighter;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .whywater {
@@ -120,39 +100,39 @@ header {
 }
 
 .whytext {
-    width:100%;
-    height:calc(100% - 400px);
-    margin-top:200px;
+    width: 100%;
+    height: calc(100% - 400px);
+    margin-top: 200px;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    padding:20px;
-    gap:20px;
+    padding: 20px;
+    gap: 20px;
 }
 
 @media (min-width: 768px) {
     .whywater {
-        display:flex;
+        display: flex;
         justify-content: center;
     }
-  .whytext {
-    width:500px;
-  }
+    .whytext {
+        width: 500px;
+    }
 }
 
 .whytext h1 {
     text-transform: uppercase;
     font-weight: normal;
-    font-size:2.1rem;
+    font-size: 2.1rem;
     line-height: 1;
     letter-spacing: 2px;
 }
 
 .whytext h1 strong {
-    color:var(--accent);
+    color: var(--accent);
 }
 
 .whytext h2 {
@@ -160,59 +140,53 @@ header {
 }
 
 .whycollage {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    gap:20px;
+    gap: 20px;
 }
 
 .collage-hor {
     display: flex;
-    height:200px;
-     align-items: stretch;
+    height: 200px;
+    align-items: stretch;
 }
 
 .collage-hor img {
-    width:auto;
-    height:100%;
+    width: auto;
+    height: 100%;
     object-fit: cover;
 }
 
 .collage-mid {
-    display:none;
-    height:100%;
+    display: none;
+    height: 100%;
 }
 
-.collage-ver {
-}
+.collage-ver {}
 
 .collage-ver img {
     width: 200px;
-    height:100%;
-     object-fit: cover;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (min-width: 768px) {
-     .collage-hor {
-        gap:20px;
-     }
+    .collage-hor {
+        gap: 20px;
+    }
 }
 
 @media (min-width: 1024px) {
-    .collage-mid  {
-        display:block;
+    .collage-mid {
+        display: block;
         display: flex;
         justify-content: space-between;
     }
 }
-
-/* Media Queries for whywater when >  ipad
-  width:calc(100vw - 50px);
-
-*/
 
 .difference {
     background: var(--secondary);
@@ -220,7 +194,7 @@ header {
     flex-direction: column;
     box-sizing: border-box;
     padding: 30px;
-    gap:50px;
+    gap: 50px;
 }
 
 @media (min-width: 1024px) {
@@ -232,15 +206,15 @@ header {
 
 .left-diff {
     display: flex;
-flex-direction: column;
-align-items: start;
-gap:10px
+    flex-direction: column;
+    align-items: start;
+    gap: 10px
 }
 
-.left-diff  h1 {
-      text-transform: uppercase;
+.left-diff h1 {
+    text-transform: uppercase;
     font-weight: normal;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     line-height: 1;
     letter-spacing: 2px;
 }
@@ -250,9 +224,9 @@ gap:10px
 }
 
 .right-diff {
-    background:var(--accent2);
-    width:100%;
-    height:100%;
+    background: var(--accent2);
+    width: 100%;
+    height: 100%;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -260,13 +234,8 @@ gap:10px
     letter-spacing: 3px;
 }
 
-/* Media Queries for difference when >  ipad
-  width:calc(100vw - 50px);
-
-*/
-
 .call-to-action {
-    background:var(--m-bg);
+    background: var(--m-bg);
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -280,15 +249,10 @@ gap:10px
     box-sizing: border-box;
     justify-content: center;
     align-items: start;
-    gap:30px;
+    gap: 30px;
 }
 
 .call-to-action p {
-    font-size:1.8rem;
-    width:200px;
+    font-size: 1.8rem;
+    width: 200px;
 }
-
-/* Media Queries for call-to-action when >  ipad
-  width:calc(100vw - 50px);
-
-*/
